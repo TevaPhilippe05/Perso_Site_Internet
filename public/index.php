@@ -1,4 +1,5 @@
 <!doctype html>
+
 <?php
     // affichage des erreurs
     error_reporting(E_ALL);
@@ -11,6 +12,7 @@
     <title>Site Teva Philippe</title>
     <style>
         
+        /* Menu */
         nav {
             display: flex;
             justify-content: center;
@@ -28,6 +30,8 @@
         nav a:hover {
             color: #6d5dfc;
         }
+
+        /* Menu_deroulant */
         .dropdown {
             position: absolute;
             top: 1rem;
@@ -66,6 +70,8 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
+        /* Cartes */
         .container {
             max-width: 1200px;
             margin: 2rem auto;
@@ -85,11 +91,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
+
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px); /* Permet de faire monter les cartes quand survolé */
         }
         .card h3 {
-            color: #5e96ff;
+            color: #5e96ff; /* Titre des cartes en bleu */
+        }
+        .card .date {
+            color: rgba(255, 255, 255, 0.6); /* Texte grisé ou transparent */
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
         }
         
         button {
@@ -139,56 +151,58 @@
         <div class="dropdown">
             <button>Menu</button>
             <div class="dropdown-content">
-                <a href="index"> Introduction et Présentation </a>
-                <a href="test"> Mon Parcours</a> <!-- TODO -->
-                <a href="index"> Projets et Portefolio</a> <!-- TODO -->
-                <a href="index"> Événements et Activités</a> <!-- TODO -->
-                <a href="index"> Mon blog</a> <!-- TODO -->
-                <a href="index"> Me contacter</a> <!-- TODO -->
+                <a href="index">Introduction et Présentation</a>
+                <a href="parcours">Mon Parcours</a> <!-- TODO -->
+                <a href="projets">Mes Projets</a> <!-- TODO -->
+                <a href="evenements">Événements et Activités</a> <!-- TODO -->
+                <a href="blog">Mon blog</a> <!-- TODO -->
+                <a href="contact">Me contacter</a> <!-- TODO -->
             </div>
         </div>
     </header>
     <nav>
         <a href="#accueil">Présentation</a>
-        <a href="#about">Mon parcours</a>
-        <a href="#contact">Mes projets</a>
+        <a href="#parcours">Mon parcours</a>
+        <a href="#projets">Mes projets</a>
     </nav>
+
     <div class="container" id="accueil">
-        <h2>Voici les différentes pages disponibles</h2>
-        <p>Bonjour, je suis Teva PHILIPPE actuellement en deuxième année de licence informatique à l'USMB. Ce site est actuellement en construction. <br> <br>
-
-        Mémo : A développer - > <br>
-        <br>
-        - Nuit de l'info 2024<br>
-        - Mon Job à l'aéroport<br>
-        - Langages de programmation et logiciels : Arduino, Jetpack Compose Kotlin, Html, Css, php, Java Script, Java, C++, Unreal Engine, Arduino, Python, Svelte, Vu js, Ada, Bash, SQL<br>
-        - Mon application android<br>
-        - Projet visi Python<br>
-        - Plugin minecraft<br>
-        <br>
-        A apprendre :<br>
-        - rust<br>
-        - C et C# <br>
-        <br>
-        A faire : passer entierement sous linux
-
-        </p>
+        <h2>Présentation</h2>
+        <p>Bonjour, je suis <strong>Teva Philippe</strong>, étudiant en deuxième année de licence informatique à l'USMB. Passionné par les technologies, je développe des projets variés en programmation et participe à des événements comme la Nuit de l'Info. </p>
     </div>
-    <div class="container" id="about">
-        <h2>A propos</h2>
+
+    <div class="container" id="parcours">
+        <h2>Mon parcours</h2>
+        
         <div class="card">
-            <h3>Machin</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor magna eu orci tincidunt, a convallis lorem sollicitudin.</p>
+            <h3>Nuit de l'Info 2024</h3>
+            <p class="date">Nuit du 5/12 au 6/12</p>
+            <p>Participation à cet événement annuel qui rassemble des étudiants pour relever des défis en programmation en l'espace d'une nuit.</p>
         </div>
+
         <div class="card">
-            <h3>Truc</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum lacus ut purus efficitur, eget consequat eros hendrerit.</p>
+            <h3>Job étudiant à l'aéroport</h3>
+            <p class="date">15/11/2024 - 15/05/2025</p>
+            <p>Agent d'enregistrement des bagages chaque week end à l'aéroport de Chambéry Savoie Mont Blanc.</Mont-Blanc></p>
         </div>
     </div>
+
+    <div class="container" id="projets">
+        <h2>Mes projets</h2>
+        <div class="card">
+            <h3>Mon application Android</h3>
+            <p>Une application développée avec Jetpack Compose Kotlin, offrant des fonctionnalités de gestion des tâches et de rappels.</p>
+        </div>
+        <div class="card">
+            <h3>Plugin Minecraft</h3>
+            <p>Création d'un plugin personnalisé en Java pour améliorer l'expérience multijoueur.</p>
+        </div>
+    </div>
+
     <div class="container" id="contact">
         <h2>Pour me contacter</h2>
         <h3>Voici un lien vers mon gitHub</h3>
-        <a href="https://github.com/TevaPhilippe05">Git</a>
+        <a href="https://github.com/TevaPhilippe05"><img src="assets/GitHub.png" alt="GitHub"> </a>
     </div>
     <footer>
         <p>&copy; 2025 Teva Philippe. Tous droits réservés.</p>
