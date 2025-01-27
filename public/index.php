@@ -201,8 +201,7 @@
 
     <div class="container" id="contact">
         <h2>Pour me contacter</h2>
-        <h3>Voici un lien vers mon gitHub</h3>
-        <a href="https://github.com/TevaPhilippe05"><img src="assets/GitHub.png" alt="GitHub"> </a>
+        <a href="https://github.com/TevaPhilippe05"><img src="assets/GitHub.png" width=10% alt="GitHub"> </a>
     </div>
     <footer>
         <p>&copy; 2025 Teva Philippe. Tous droits réservés.</p>
