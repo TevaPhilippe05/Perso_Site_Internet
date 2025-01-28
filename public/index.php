@@ -262,9 +262,6 @@
             </a>
         </span>
     </div>
-        
-
-
 
     <footer>
         <p>&copy; 2025 Teva Philippe. Tous droits réservés.</p>
