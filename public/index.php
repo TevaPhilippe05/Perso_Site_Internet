@@ -19,6 +19,7 @@
             background: #252540;
             padding: 1rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 22px;
         }
         nav a {
             color: #ffffff;
@@ -34,7 +35,7 @@
         /* Menu_deroulant */
         .dropdown {
             position: absolute;
-            top: 1rem;
+            top: 1.5rem;
             right: 2rem;
         }
         .dropdown button {
@@ -43,7 +44,7 @@
             padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 1.5rem;
             cursor: pointer;
         }
         .dropdown button:hover {
@@ -127,7 +128,7 @@
             background: linear-gradient(135deg, #5366c6, #006e4e); /* Dégradé du header */
             color: #ccffff;
             text-align: center;
-            padding: 1.9rem; /* Taille du header */
+            padding: 1.5rem; /* Taille du header */
         }
 
         body {
@@ -136,6 +137,12 @@
             box-sizing: border-box; /* Permet que la taille des éléments soit gérée correctement */
             background-color: #1e1e2f;
             color: #cccccc;
+            line-height: 1.8;
+            font-size: 19px;
+        }
+
+        h1 {
+            font-size: 38px;
         }
 
         footer {
