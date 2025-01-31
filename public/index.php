@@ -35,16 +35,16 @@
         /* Menu_deroulant */
         .dropdown {
             position: absolute;
-            top: 1.5rem;
+            top: 1.3rem;
             right: 2rem;
         }
         .dropdown button {
             background: #252540;
             color: #ffffff;
-            padding: 1rem 2rem;
+            padding: 1rem 2.2rem;
             border: none;
             border-radius: 5px;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             cursor: pointer;
         }
         .dropdown button:hover {
@@ -58,6 +58,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             border-radius: 8px;
             padding: 0.5rem 0;
+            font-size: 16px;
         }
         .dropdown-content a {
             display: block;
@@ -196,6 +197,19 @@
             transition: .2s;
         }
 
+        .savoir_plus{
+            display: flex;
+            justify-content: right;   
+        }
+
+        .savoir_plus a{
+            color: #C8AD7F;
+            transition: .3s ease-in-out;
+        }
+
+        .savoir_plus a:hover{
+            transform: scale(1.15);
+        }
 
 
     </style>
@@ -231,7 +245,7 @@
         
         <div class="card">
             <h3>Nuit de l'Info 2024</h3>
-            <p class="date">Nuit du 5/12 au 6/12</p>
+            <p class="date">Nuit du 5/12/2024 au 6/12/2024</p>
             <p>Participation à cet événement annuel qui rassemble des étudiants pour relever des défis en programmation en l'espace d'une nuit.</p>
         </div>
 
@@ -240,6 +254,9 @@
             <p class="date">15/11/2024 - 15/05/2025</p>
             <p>Agent d'enregistrement des bagages chaque week end à l'aéroport de Chambéry Savoie Mont Blanc.</Mont-Blanc></p>
         </div>
+        <span class="savoir_plus">
+            <a href="parcours">En savoir plus</a>
+        </span>
     </div>
 
     <div class="container" id="projets">
@@ -252,6 +269,9 @@
             <h3>Plugin Minecraft</h3>
             <p>Création d'un plugin personnalisé en Java pour améliorer l'expérience multijoueur.</p>
         </div>
+        <span class="savoir_plus">
+            <a href="parcours">En savoir plus</a>
+        </span>
     </div>
 
     <div class="container" id="contact">
