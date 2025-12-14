@@ -258,6 +258,7 @@
             <a href="parcours">En savoir plus</a>
         </span>
     </div>
+    
 
     <div class="container" id="projets">
         <h2>Mes projets</h2>
@@ -291,7 +292,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Teva Philippe. Tous droits réservés.</p>
+        <p>&copy; 2025 Teva Philippe. Tous droits réservés."Modification de test de fonctionnement du déploiement serveur"</p>
     </footer>
 </body>
 </html>
