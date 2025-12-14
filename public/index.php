@@ -292,7 +292,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Teva Philippe. Tous droits réservés."Modification de test de fonctionnement du déploiement serveur"</p>
+        <p>&copy; 2025 Teva Philippe. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
