@@ -108,6 +108,12 @@
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
+
+        .card .techno {
+            color: rgba(177, 142, 142, 1); /* Texte grisé ou transparent */
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
         
         button {
             background: #6d5dfc; /* Couleur de fond */
@@ -210,6 +216,11 @@
         .savoir_plus a:hover{
             transform: scale(1.15);
         }
+        
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
 
 
     </style>
@@ -220,58 +231,99 @@
         <div class="dropdown">
             <button>Menu</button>
             <div class="dropdown-content">
-                <a href="index">Introduction et Présentation</a>
-                <a href="parcours">Mon Parcours</a> <!-- TODO -->
-                <a href="projets">Mes Projets</a> <!-- TODO -->
-                <a href="evenements">Événements et Activités</a> <!-- TODO -->
-                <a href="blog">Mon blog</a> <!-- TODO -->
-                <a href="contact">Me contacter</a> <!-- TODO -->
+                <a href="index.php">Introduction et Présentation</a>
+                <!-- <a href="parcours.php">Mon Parcours</a> TODO -->
+                <!-- <a href="projets.php">Mes Projets</a> TODO -->
+                <!-- <a href="evenements.php">Événements et Activités</a> TODO -->
+                <!-- <a href="blog.php">Mon blog</a> TODO -->
+                <a href="contact.php">Me contacter</a> <!-- TODO -->
             </div>
         </div>
     </header>
     <nav>
         <a href="#accueil">Présentation</a>
-        <a href="#parcours">Mon parcours</a>
-        <a href="#projets">Mes projets</a>
+        <a href="#projets">Projets</a>
+        <a href="#évènements">Evènements</a>
+        <a href="#parcours">Parcours professionnel</a>
     </nav>
 
     <div class="container" id="accueil">
         <h2>Présentation</h2>
-        <p>Bonjour, je suis <strong>Teva Philippe</strong>, étudiant en deuxième année de licence informatique à l'USMB. Passionné par les technologies, je développe des projets variés en programmation et participe à des événements comme la Nuit de l'Info. </p>
+        <p>Bonjour, je suis <strong>Teva Philippe</strong>, étudiant en troisième année de licence informatique à l'USMB. Passionné par les technologies, je développe des projets variés en programmation et participe à des événements tels que la nuit de l'informatique.</p>
+    </div>
+    
+    <div class="container" id="projets">
+        <h2>Mes projets</h2>
+        <a href="https://edt.artisants2025.tevaphilippe.fr/">
+            <div class="card">
+                <h3>Emploi du temps d'artisants</h3>
+                <p class="techno">Techno : PHP, JavaScript, CSS, SQL</p>
+                <p class="date">2025</p>
+                <p>Un système de calendrier pour des artisans développé dans le cadre d'un projet de licence.</p>
+            </div>
+        </a>
+        <a href="https://loserland2025.tevaphilippe.fr/">
+            <div class="card">
+                <h3>Jeu de combat</h3>
+                <p class="techno">Techno : JavaScript</p>
+                <p class="date">2025</p>
+                <p>Un jeu multijoueur avec diverses fonctionnalités intéressantes.</p>
+            </div>
+        </a>
+        <a href="https://once.upon2024.tevaphilippe.fr/">
+            <div class="card">
+                <h3>Jeu à choix</h3>
+                <p class="techno">Techno : PHP, JavaScript, CSS, SQL</p>
+                <p class="date">2024</p>
+                <p>Un jeu d'histoire à choix multiples à suivre ainsi qu'un moteur permettant de créer des histoires.</p>
+            </div>
+        </a>
+        <!-- <span class="savoir_plus">
+            <a href="parcours.php">En savoir plus</a>
+        </span> -->
+    </div>
+
+    <div class="container" id="évènements">
+        <h2>Mes événements</h2>
+        <a href="https://hackathon.ndi2025.tevaphilippe.fr/">
+            <div class="card">
+                <h3>Nuit de l'informatique 2025</h3>
+                <p class="techno">Techno : PHP, JavaScript, CSS</p>
+                <p class="date">Nuit du 4/12/2025 au 5/12/2025</p>
+                <p>Développer en équipe une application web en une nuit, répondant au défi **NIRD (Numérique Inclusif, Responsable et Durable)** : créer une solution numérique libre et durable qui met en avant l’autonomie numérique et des alternatives aux solutions dominées par les GAFAM.</p>
+            </div>
+        </a>
+        <a href="https://hackathon.iaf2025.tevaphilippe.fr/">
+            <div class="card">
+                <h3>Hackathon Ingénieur au Féminin</h3>
+                <p class="techno">Techno : PHP, JavaScript, CSS, Python</p>
+                <p class="date">13/02/2025</p>
+                <p>Imaginer et prototyper une solution tech qui met en avant l’innovation et l’inclusion des femmes dans les métiers de l’ingénierie.</p>
+            </div>
+        </a>
+        <a href="https://hackathon.ndi2024.tevaphilippe.fr/">
+            <div class="card">
+                <h3>Nuit de l'informatique 2024</h3>
+                <p class="techno">Techno : Svelte, TypeScript, JavaScript, CSS, HTML</p>
+                <p class="date">Nuit du 5/12/2024 au 6/12/2024</p>
+                <p></p>
+            </div>
+        </a>
+        <!-- <span class="savoir_plus">
+            <a href="parcours.php">En savoir plus</a>
+        </span> -->
     </div>
 
     <div class="container" id="parcours">
-        <h2>Mon parcours</h2>
-        
-        <div class="card">
-            <h3>Nuit de l'Info 2024</h3>
-            <p class="date">Nuit du 5/12/2024 au 6/12/2024</p>
-            <p>Participation à cet événement annuel qui rassemble des étudiants pour relever des défis en programmation en l'espace d'une nuit.</p>
-        </div>
+        <h2>Mon parcours pro</h2>
 
         <div class="card">
             <h3>Job étudiant à l'aéroport</h3>
-            <p class="date">15/11/2024 - 15/05/2025</p>
-            <p>Agent d'enregistrement des bagages chaque week end à l'aéroport de Chambéry Savoie Mont Blanc.</Mont-Blanc></p>
+            <p class="date">15/11/2024 - 15/05/2025 (week-end)</p>
+            <p>Agent d'enregistrement des bagages à l'aéroport de Chambéry Savoie Mont Blanc.</p>
         </div>
         <span class="savoir_plus">
-            <a href="parcours">En savoir plus</a>
-        </span>
-    </div>
-    
-
-    <div class="container" id="projets">
-        <h2>Mes projets</h2>
-        <div class="card">
-            <h3>Mon application Android</h3>
-            <p>Une application développée avec Jetpack Compose Kotlin, offrant des fonctionnalités de gestion des tâches et de rappels.</p>
-        </div>
-        <div class="card">
-            <h3>Plugin Minecraft</h3>
-            <p>Création d'un plugin personnalisé en Java pour améliorer l'expérience multijoueur.</p>
-        </div>
-        <span class="savoir_plus">
-            <a href="parcours">En savoir plus</a>
+            <a href="parcours.php">En savoir plus</a>
         </span>
     </div>
 
