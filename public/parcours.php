@@ -5,7 +5,7 @@
 
     $conn = db_connect();
 
-    $result = mysqli_query($conn, "SELECT * FROM Test_Site");
+    $result = mysqli_query($conn, "SELECT * FROM test_site");
     foreach($result as $dico){
         echo($dico["id"]);
         echo($dico["nom"]);
